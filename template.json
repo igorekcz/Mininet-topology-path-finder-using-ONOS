@@ -1,0 +1,30 @@
+{
+    "priority": 40000,
+   "timeout": 0,
+    "isPermanent": true,
+    "deviceId": "#id#",
+    "treatment": {
+      "instructions": [
+       {
+         "type": "OUTPUT",
+         "port": "#port#"
+       }
+     ]
+    },
+    "selector": {
+      "criteria": [
+        {
+          "type": "IPV4_DST",
+          "ip": "#ip1#/32"
+       },
+	   {
+          "type": "IPV4_SRC",
+          "ip": "#ip2#/32"
+       },
+        {
+          "type": "ETH_TYPE",
+          "ethType": "0x0800"
+        }
+     ]
+    }
+  }
